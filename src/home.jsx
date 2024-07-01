@@ -7,8 +7,7 @@ function Home() {
   return (
     <>
      <Nav />
-     <p className="font-inter font-extralight text-2xl">skjdhdjhMKLK</p>
-    </>
+     </>
   )
 }
 

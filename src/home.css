@@ -1,0 +1,9 @@
+
+a {
+    cursor: pointer;
+    transition: ease-in;
+    transition-duration: 100ms;
+}
+a:hover {
+    color: rgb(85, 96, 105);
+}
