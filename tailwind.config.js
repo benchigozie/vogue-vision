@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+  
     screens: {
       'tn': '350px',
       'sm': '640px',
@@ -25,7 +26,24 @@ export default {
       'vred': 'red',
       'vwhite': 'rgb(243 244 246)',
       'vblue': 'rgb(3 105 161)',
+      'vbrown': 'rgb(107, 47, 26)',
     },
+    backgroundImage: {
+      'hero-image': "url('https://ik.imagekit.io/zjcuhh7cp/pexels-jvdm-1457842%20(1).png?updatedAt=1719851306200')",
+    },
+    animation: {
+      opac: 'opac 0.7s ease-in',
+    },
+    keyframes: {
+      opac: {
+        '0%':{
+          opacity: '0',
+        },
+        '100%':{
+          opacity: '1',
+        },
+      },
+    }
   },
   plugins: [],
 }
