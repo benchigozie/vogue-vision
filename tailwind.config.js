@@ -19,7 +19,9 @@ export default {
       fontFamily : {
         'lora': ['lora'],
         'inter': ['inter'],
-      }
+      },
+
+      
     },
     colors: {
       'vblack': 'rgb(3 7 18)',
@@ -28,11 +30,9 @@ export default {
       'vblue': 'rgb(3 105 161)',
       'vbrown': 'rgb(107, 47, 26)',
     },
-    backgroundImage: {
-      'hero-image': "url('https://ik.imagekit.io/zjcuhh7cp/pexels-jvdm-1457842%20(1).png?updatedAt=1719851306200')",
-    },
     animation: {
       opac: 'opac 0.7s ease-in',
+      left: 'left 0.7s ease-in'
     },
     keyframes: {
       opac: {
@@ -43,8 +43,21 @@ export default {
           opacity: '1',
         },
       },
-    }
+      left :{
+        '0%': {
+          left: '-400px',
+        },
+        '100%': {
+          left: '0%',
+        },
+      },
+    },
+    backgroundImage: {
+      'hero-image': "url('https://ik.imagekit.io/zjcuhh7cp/pexels-jvdm-1457842%20(1).png?updatedAt=1719851306200')",
+    },
+    
   },
   plugins: [],
 }
+
 

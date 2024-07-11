@@ -10,6 +10,7 @@ function Home() {
     <>
      <Nav />
      <Hero />
+     <InteriorInfo />
      </>
   )
 }

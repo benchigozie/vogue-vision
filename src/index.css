@@ -1,13 +1,7 @@
 @tailwind base;
 @tailwind components;
 
-.left-ham {
-  @apply before:content-[''] before:absolute before:h-1.5 before:w-9 before:bg-vblack before:translate-y-2.5 before:block before:rounded-lg;
-}
 
-.right-ham {
-  @apply after:content-[''] after:absolute after:h-1.5 after:w-9 after:bg-vblack after:-translate-y-2.5 after:block after:rounded-lg;
-}
 
 .active-ham .bar:nth-of-type(1){
   @apply rotate-45 translate-y-2;

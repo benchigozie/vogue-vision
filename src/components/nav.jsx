@@ -23,7 +23,7 @@ function Nav () {
 
     return (
         <>
-        <nav id="nav" className="flex gap-x-7 justify-between items-center alg:px-14 px-3 py-2 font-inter fixed w-full z-10">
+        <nav id="nav" className="flex gap-x-7 justify-between items-center alg:px-14 px-3 py-2 font-inter fixed w-full z-20">
             <div className="w-2/3 alg:w-auto">
               <img src="https://ik.imagekit.io/zjcuhh7cp/tr:w-113,h-44/interior%20design/vogue-vision-high-resolution-logo-transparent%201%20(2).png?" alt="" /> 
             </div>
@@ -38,22 +38,21 @@ function Nav () {
                 <button className="bg-vblue text-vwhite w-28 h-9 hidden tn:block hover:transform hover:scale-105 ease-in duration-100">Get in touch</button>
             </div>
             
-            <div onClick={setHam} id="ham-burger" className={hamState ? "active-ham cursor-pointer flex flex-col alg:hidden gap-y-0.5 w-max ease-in z-30" : "flex flex-col alg:hidden gap-x-0.5 gap-y-0.5 w-max cursor-pointer z-30"}>
-                    <div className="bg-vblack w-9 h-1.5 rounded-lg bar ease-in duration-200"></div>
-                    <div className="bg-vblack w-9 h-1.5 rounded-lg bar ease-in duration-200"></div>
-                    <div className="bg-vblack w-9 h-1.5 rounded-lg bar ease-in duration-200"></div>
+            <div onClick={setHam} id="ham-burger" className={hamState ? "active-ham cursor-pointer flex flex-col alg:hidden gap-y-0.5 w-max" : "flex flex-col alg:hidden gap-x-0.5 gap-y-0.5 w-max cursor-pointer"}>
+                    <div className="bg-vblack w-9 h-1.5 rounded-lg bar ease-in duration-300"></div>
+                    <div className="bg-vblack w-9 h-1.5 rounded-lg bar ease-in duration-300"></div>
+                    <div className="bg-vblack w-9 h-1.5 rounded-lg bar ease-in duration-300"></div>
             </div>
         </nav>
             <div className='font-inter'>
-                <div onClick={setHam} className={hamState ? "fixed h-screen w-screen bg-vwhite top-0 opacity-1 duration-500 flex flex-col": " hidden h-screen w-screen bg-vwhite -top-full opacity-0 duration-500"}> 
+                <div onClick={setHam} className={hamState ? "absolute h-screen w-screen bg-vwhite top-0 opacity-1 duration-500 ease-in flex flex-col z-10": "absolute h-screen w-screen bg-vwhite -top-full opacity-25 ease-in duration-500 z-10"}> 
                     
 
-                        <div className="text-3xl flex flex-col px-9 gap-y-5 py-20">
+                        <div className="text-3xl flex flex-col px-9 gap-y-5 py-20 text-vblack">
                             <a>About</a>
                             <a>service</a>
                             <a>Port-Folio</a>
-                            <a>Contact</a>
-                        
+                            <a>Contact</a>     
                         </div>
                 </div>
                 
