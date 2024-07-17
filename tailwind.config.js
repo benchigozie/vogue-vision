@@ -25,7 +25,6 @@ export default {
     },
     colors: {
       'vblack': 'rgb(3 7 18)',
-      'vred': 'red',
       'vwhite': 'rgb(243 244 246)',
       'vblue': 'rgb(3 105 161)',
       'vbrown': 'rgb(107, 47, 26)',

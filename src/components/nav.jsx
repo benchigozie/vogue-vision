@@ -48,7 +48,7 @@ function Nav () {
                 <div onClick={setHam} className={hamState ? "absolute h-screen w-screen bg-vwhite top-0 opacity-1 duration-500 ease-in flex flex-col z-10": "absolute h-screen w-screen bg-vwhite -top-full opacity-25 ease-in duration-500 z-10"}> 
                     
 
-                        <div className="text-3xl flex flex-col px-9 gap-y-5 py-20 text-vblack">
+                        <div className="text-2xl alg:text-3xl flex flex-col px-9 gap-y-5 py-24 text-vblack">
                             <a>About</a>
                             <a>service</a>
                             <a>Port-Folio</a>
@@ -62,7 +62,7 @@ function Nav () {
 
 
    
-}
+};
 
 
-export default Nav
+export default Nav;
