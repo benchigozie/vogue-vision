@@ -89,4 +89,13 @@
     src: url('/fonts/inter/Inter-Black.woff2') format('woff2'),
     url('/fonts/inter/Inter-Black.woff') format('woff');
   }
+
+
+  @font-face {
+    font-family: "lora";
+    font-style: "italic";
+    font-weight: 600;
+    src: url('/fonts/lora/Lora-SemiBold.woff2') format('woff2'),
+    url('/fonts/lora/Lora-SemiBoldItalic.woff') format('woff');
+  }
 } 

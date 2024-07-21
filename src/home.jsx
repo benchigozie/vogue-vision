@@ -3,7 +3,8 @@ import Nav from './components/nav.jsx'
 import Hero from './components/hero.jsx'
 import InteriorInfo from './components/interiorinfo.jsx'
 import Credentials from './components/credentials.jsx'
-
+import Process from './components/process.jsx'
+import Welcome from './components/welcometext.jsx'
 
 function Home() {
 
@@ -11,8 +12,10 @@ function Home() {
     <>
      <Nav />
      <Hero />
+     <Welcome />
      <InteriorInfo />
      <Credentials />
+     <Process />
      </>
   )
 };

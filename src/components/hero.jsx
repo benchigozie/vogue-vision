@@ -11,8 +11,8 @@ function Hero () {
                         <h1 className="border-4 border-vbrown p-6 bg-vblack bg-opacity-45  md:w-8/12 alg:w-4/6 lg:w-2/4 text-3xl alg:text-5xl font-bold">Transform Your Space To Your <span className="text-vbrown">Home. </span>Bring Your Vision To Life</h1>
                     </div>
                     <div className="flex mt-12 font-inter">
-                        <button className="bg-vblue text-vwhite w-28 h-9 hidden tn:block hover:transform hover:scale-105 ease-in duration-100">Get Started</button>
-                        <button className="text-vwhite w-28 h-9 hidden tn:block hover:transform hover:scale-105 ease-in duration-100 border-2">Learn More</button>
+                        <button className="bg-vblue text-vwhite w-28 h-9 hover:transform hover:scale-105 ease-in duration-100">Get Started</button>
+                        <button className="text-vwhite w-28 h-9 hover:transform hover:scale-105 ease-in duration-100 border-2">Learn More</button>
                     </div>
                 </div>
             </div>
