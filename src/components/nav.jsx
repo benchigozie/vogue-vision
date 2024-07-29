@@ -3,24 +3,36 @@ import { useState, useEffect } from 'react'
 
 
 function Nav () {
-    
-  
-    
 
+    
+    
+    const [hamState, setHamState] = useState(false);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     
 
     function setHam(){
         setHamState(hamState => !hamState);
         
     }
-
-    function navEvent () {
-        if (hamState){
-            setHam();
-        }
+    function updateWidth () {
+        setScreenWidth(window.innerWidth)
     }
-    const [hamState, setHamState] = useState(false);
 
+    
+
+    useEffect (() => {
+
+        window.addEventListener('resize', () => {
+            updateWidth();
+            if (screenWidth >= 910 ){
+                setHamState(false);
+            }
+        })
+        
+        return () => {
+            window.removeEventListener('resize', updateWidth)
+        }
+    }, [screenWidth])
     return (
         <>
         <nav id="nav" className="flex gap-x-7 justify-between items-center alg:px-14 px-3 py-2 font-inter fixed w-full z-20">
@@ -45,7 +57,7 @@ function Nav () {
             </div>
         </nav>
             <div className='font-inter'>
-                <div onClick={setHam} className={hamState ? "absolute h-screen w-screen bg-vwhite top-0 opacity-1 duration-500 ease-in flex flex-col z-10": "absolute h-screen w-screen bg-vwhite -top-full opacity-25 ease-in duration-500 z-10"}> 
+                <div onClick={setHam} className={hamState ? "absolute h-screen w-screen -top-0 bg-vwhite opacity-1 duration-500 ease-in flex flex-col z-10": "absolute h-screen w-screen bg-vwhite -top-full opacity-0 ease-in duration-500 z-10"}> 
                     
 
                         <div className="text-2xl alg:text-3xl flex flex-col px-9 gap-y-5 py-24 text-vblack">

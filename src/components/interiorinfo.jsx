@@ -1,7 +1,7 @@
 function InteriorInfo () {
     return (
         <>
-        <section id="interior-info" className="grid alg:grid-cols-2 grid-cols-1 text-xl alg:text-2xl">
+        <section id="interior-info" className="grid alg:grid-cols-2 grid-cols-1 text-xl alg:text-2xl font-inter">
             <div className="flex justify-center items-center">
                 <p className="max-w-xl px-10 py-16 alg:py-20">Interior design is more than just decorating a space; it's about creating environments that enhance your lifestyle and well-being. Your home should be a reflection of who you are. Let us help you express your unique style and ensure that your space feels personal and inviting.</p>
             </div>

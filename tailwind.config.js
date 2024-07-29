@@ -33,7 +33,8 @@ export default {
     },
     animation: {
       opac: 'opac 0.7s ease-in',
-      left: 'left 0.7s ease-in'
+      left: 'left 0.7s ease-in',
+      inf: 'inf 10s linear infinite'
     },
     keyframes: {
       opac: {
@@ -50,6 +51,14 @@ export default {
         },
         '100%': {
           left: '0%',
+        },
+      },
+      inf : {
+        '0%': {
+          left: '0',
+        },
+        '100%': {
+          left: 'calc(-100% + 56px)',
         },
       },
     },

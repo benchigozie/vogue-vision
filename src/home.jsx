@@ -5,6 +5,7 @@ import InteriorInfo from './components/interiorinfo.jsx'
 import Credentials from './components/credentials.jsx'
 import Process from './components/process.jsx'
 import Welcome from './components/welcometext.jsx'
+import Partners from './components/partners.jsx'
 
 function Home() {
 
@@ -16,6 +17,7 @@ function Home() {
      <InteriorInfo />
      <Credentials />
      <Process />
+     <Partners />
      </>
   )
 };
