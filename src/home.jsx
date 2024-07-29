@@ -6,6 +6,7 @@ import Credentials from './components/credentials.jsx'
 import Process from './components/process.jsx'
 import Welcome from './components/welcometext.jsx'
 import Partners from './components/partners.jsx'
+import Faq from './components/faq.jsx'
 
 function Home() {
 
@@ -18,6 +19,7 @@ function Home() {
      <Credentials />
      <Process />
      <Partners />
+     <Faq />
      </>
   )
 };

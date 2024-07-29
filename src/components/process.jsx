@@ -7,7 +7,7 @@ function Process () {
         <>
         <section className="flex flex-col">
             <div className="font-lora">
-                <p children className="text-2xl font-semibold text-vbrown text-center">Our Process</p>
+                <h3 className="text-2xl font-semibold text-vbrown text-center">Our Process</h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 alg:grid-cols-4 gap-4 px-6 font-inter">
             <ProcessBox img="src/assets/images/phone-call.png" head="Book A Call" text="It all starts with a call to understand your vision and to know where we come in. This is the first to designing your dreamhome."/>

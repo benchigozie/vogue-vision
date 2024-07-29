@@ -16,7 +16,7 @@ function Partners () {
     return (
         <>
         <section className="flex flex-col items-center overflow-hidden">
-            <p className="text-2xl text-vbrown font-lora font-medium text-center py-10">Trusted By</p>
+            <h3 className="text-2xl text-vbrown font-lora font-medium text-center py-10">Trusted By</h3>
             <div className="overflow-clip bg-gra w-[1001px] from-vblue to-vwhite self-center">
                 <div className="flex w-max gap-14 px-14 relative animate-inf">
                     <div id="original-scroll" ref={scrollContainerRef} className="flex gap-14 self-center">

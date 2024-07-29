@@ -7,7 +7,7 @@ function ProcessBox (processProp) {
             <img src={processProp.img} alt="" className="w-1/3 py-3" />
             <div className="">
                 <p className="text-lg font-medium py-3 text-center">{processProp.head}</p>
-                <p className="">{processProp.text}</p>
+                <p className="text-vblack text-opacity-90">{processProp.text}</p>
             </div>
         </div>
         </>
