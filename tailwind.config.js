@@ -24,13 +24,14 @@ export default {
         'card-1': 'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px',
       },
       
+      colors: {
+        'vblack': 'rgb(3 7 18)',
+        'vwhite': 'rgb(243 244 246)',
+        'vblue': 'rgb(3 105 161)',
+        'vbrown': 'rgb(107, 47, 26)',
+      },
     },
-    colors: {
-      'vblack': 'rgb(3 7 18)',
-      'vwhite': 'rgb(243 244 246)',
-      'vblue': 'rgb(3 105 161)',
-      'vbrown': 'rgb(107, 47, 26)',
-    },
+    
     animation: {
       opac: 'opac 0.7s ease-in',
       left: 'left 0.7s ease-in',
@@ -62,9 +63,7 @@ export default {
         },
       },
     },
-    backgroundImage: {
-      'hero-image': "url('https://ik.imagekit.io/zjcuhh7cp/pexels-jvdm-1457842%20(1).png?updatedAt=1719851306200')",
-    },
+    
     
   },
   plugins: [],

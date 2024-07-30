@@ -5,9 +5,10 @@ function Question (prop) {
     const [question, setQuestionState]= useState(false);
     
     const updateQuestionState = () => setQuestionState(!question);
+
     return (
         <>
-            <div onClick={updateQuestionState} className="bg-vwhite rounded-lg font-inter">
+            <div onClick={updateQuestionState} className="bg-vwhite rounded-lg font-inter shadow-card-1 hover:outline hover:outline-2 outline-sky-400">
                 <div className="flex justify-between px-5 py-4">
                     <p>{prop.question}</p>
                     <span className="flex items-center">
