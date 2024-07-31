@@ -5,7 +5,7 @@ function Process () {
     
     return (
         <>
-        <section className="flex flex-col">
+        <section className="flex flex-col gap-14">
             <div className="font-lora">
                 <h3 className="text-2xl font-semibold text-vbrown text-center">Our Process</h3>
             </div>

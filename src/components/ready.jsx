@@ -2,7 +2,7 @@ function Ready () {
     
     return (
         <>
-        <section className="flex justify-center flex-col gap-16 md:flex-row md:gap-28 alg:gap-56 lg:gap-80  font-inter">
+        <section className="flex justify-center flex-col gap-16 md:flex-row md:gap-28 md:px-[5%] alg:px-0 alg:gap-56 lg:gap-80  font-inter">
             <div className="flex flex-col gap-4 justify-center px-[5%]">
                 <h4 className="text-lg text-vblack font-medium md:self-start">Ready to Start your Project?</h4>
                 <div>

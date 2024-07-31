@@ -8,6 +8,8 @@ import Welcome from './components/welcometext.jsx'
 import Partners from './components/partners.jsx'
 import Faq from './components/faq.jsx'
 import Ready from './components/ready.jsx'
+import Footer from './components/footer.jsx'
+import Spacing from './components/spacing.jsx'
 
 function Home() {
 
@@ -15,13 +17,22 @@ function Home() {
     <>
      <Nav />
      <Hero />
+     <Spacing />
      <Welcome />
+     <Spacing />
      <InteriorInfo />
+     <Spacing />
      <Credentials />
+     <Spacing />
      <Process />
+     <Spacing />
      <Partners />
+     <Spacing />
      <Faq />
+     <Spacing />
      <Ready />
+     <Spacing />
+     <Footer />
      </>
   )
 };
