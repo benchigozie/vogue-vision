@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-
+import { Link, Routes } from 'react-router-dom';
 
 
 function Nav ({heroState}) {
@@ -55,11 +55,11 @@ function Nav ({heroState}) {
               <img src="https://ik.imagekit.io/zjcuhh7cp/tr:w-113,h-44/interior%20design/vogue-vision-high-resolution-logo-transparent%201%20(2).png?" alt="" /> 
             </div>
             <div className="nav-links gap-x-7 hidden alg:flex text-vblack justify-around w-1/3 basis-6/12">
-                <a className='hover:scale-105 ease-in'>Home</a>
-                <a className='hover:scale-105 ease-in' href='src/about/index.html'>About</a>
-                <a className='hover:scale-105 ease-in'>service</a>
-                <a className='hover:scale-105 ease-in'>Port-Folio</a>
-                <a className='hover:scale-105 ease-in'>Contact</a>
+                <Link to="/" className='hover:scale-105 ease-in'>Home</Link>
+                <Link to="/about-us" className='hover:scale-105 ease-in'>About</Link>
+                <Link to="/services"  className='hover:scale-105 ease-in'>services</Link>
+                <Link to="/port-folio" className='hover:scale-105 ease-in'>PortFolio</Link>
+                <Link to="/contact-us" className='hover:scale-105 ease-in'>Contact</Link>
             </div>
             <div>
                 <button className="bg-vblue text-vwhite w-28 h-9 hidden tn:block hover:transform hover:scale-105 ease-in duration-100">Get in touch</button>

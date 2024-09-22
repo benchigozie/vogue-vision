@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Nav from './nav.jsx'
 import Hero from './hero.jsx'
 import InteriorInfo from './interiorinfo.jsx'
 import Credentials from './credentials.jsx'
@@ -11,20 +10,12 @@ import Ready from './ready.jsx'
 import Footer from './footer.jsx'
 import Spacing from './spacing.jsx'
 
-function Home () {    
+function Home ({heroState, updateHeroState}) {    
 
-  const [heroState, setHeroState] = useState(true);
-
-  function updateHeroState (herostate, isIntersecting) {
-    setHeroState(isIntersecting);
-  }
-
-
-
+  
   return (
   
     <>
-     <Nav heroState={heroState} />
      <Hero heroState={heroState} updateHeroState={updateHeroState}/>
      <Welcome />
      <InteriorInfo />

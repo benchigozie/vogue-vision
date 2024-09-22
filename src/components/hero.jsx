@@ -1,6 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Hero ({heroState, updateHeroState}) {
+
+    
 
         const heroRef = useRef();
           
