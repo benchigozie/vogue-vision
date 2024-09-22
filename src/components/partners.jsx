@@ -4,11 +4,11 @@ function Partners () {
 
     const scrollContainerRef = useRef();
     
-    useEffect (() => {
+    /*useEffect (() => {
         
         const width = `${scrollContainerRef.current.offsetWidth}px`;
         console.log(width);
-    }, [])
+    }, [])*/
 
     
     

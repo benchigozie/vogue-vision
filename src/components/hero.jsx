@@ -1,10 +1,28 @@
+import { useEffect, useRef } from "react";
 
-function Hero () {
+function Hero ({heroState, updateHeroState}) {
 
-
+        const heroRef = useRef();
+          
+          const heroOptions = {
+              rootMargin : '-300px 0px 0px 0px',
+      
+          };
+      
+          
+          const heroObserver = new IntersectionObserver((entries) =>{
+              entries.forEach(entry => {
+                  updateHeroState(heroState, entry.isIntersecting)
+              });
+          }, heroOptions);
+      
+          useEffect(() => {
+            heroObserver.observe(heroRef.current);
+          })
+    
     return (
         <>
-        <section id="hero" className="relative">
+        <section ref={heroRef} id="hero" className="relative">
             <div className="bg-[url('https://ik.imagekit.io/zjcuhh7cp/interior%20design/pexels-fotoaibe-1643383%20(1).png?')]  bg-vbrown w-full bg-cover bg-center bg-no-repeat animate-opac pt-16">
                 <div className="flex flex-col py-28 px-10 font-lora w-full md:block md:px-8 md:py-32 text-vwhite alg:py-28 alg:px-10   lg:px-20 relative animate-left">
                     <div className="flex">

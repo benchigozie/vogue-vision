@@ -18,8 +18,8 @@ function Question (prop) {
                         
                     </span>
                 </div>
-                <div className={`px-6 grid ${question ? "grid-rows-[1fr] opacity-100 py-3": "grid-rows-[0fr] opacity-0"} ease-in-out duration-500 transition-all overflow-hidden`}>
-                    <p className="overflow-hidden">{prop.answer}</p>
+                <div className={`px-8 grid ${question ? "grid-rows-[1fr] opacity-100 pt-3 pb-8": "grid-rows-[0fr] opacity-0"} ease-in-out duration-500 transition-all overflow-hidden`}>
+                    <p className="overflow-hidden font-light">{prop.answer}</p>
                 </div>
             </div>
         </>

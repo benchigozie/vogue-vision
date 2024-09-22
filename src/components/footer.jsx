@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-        <footer className="bg-[#3a2a0e] text-vwhite text-opacity-80 px-[5%] md:px-16">
+        <footer className="bg-[#553f1a] text-vwhite text-opacity-80 px-[5%] md:px-16">
             <div className="py-24 grid md:grid-cols-2 lg:grid-cols-3 auto-cols-max grid-cols-1 gap-20 md:gap-y-20 font-inter">
                 <div>
                 <img src="https://ik.imagekit.io/zjcuhh7cp/tr:w-113,h-44/interior%20design/vogue-vision-high-resolution-logo-transparent%201%20(2).png?" alt="" />
@@ -14,25 +14,25 @@ const Footer = () => {
                     <a href="">Contact Us</a>
                 </div>
                 <div className="flex flex-col gap-28">
-                    <div className="flex flex-col">
+                    <div className="flex flex-col gap-4">
                         <p>Subscribe to our newsletter to recieve the latest updates</p>
-                        <div className="bg-vwhite p-1 flex justify-between rounded-lg shadow-inner">
+                        <div className="bg-vwhite p-1 flex justify-between rounded-lg shadow-inner md:gap-1">
                             <input className="min-w-32 w-[80%] text-vblack rounded-md focus:outline-vblue caret-sky-400 px-2" type="email" />
                             <button className="px-3 py-2 bg-vblue rounded-md">Subscribe</button>
                         </div>
                     </div>
                     <div className="flex gap-3">
                         <span>
-                            <img src="/src/assets/images/facebook-app-symbol.png" alt="" />
+                            <img src="/src/assets/images/facebook-app-symbol.png" alt="" className="cursor-pointer"/>
                         </span>
                         <span>
-                            <img src="/src/assets/images/instagram.png" alt="" />
+                            <img src="/src/assets/images/instagram.png" alt="" className="cursor-pointer"/>
                         </span>
                         <span>
-                            <img src="src/assets/images/linkedin.png" alt="" />
+                            <img src="src/assets/images/linkedin.png" alt="" className="cursor-pointer"/>
                         </span>
                         <span>
-                            <img src="src/assets/images/whatsapp.png" alt="" />
+                            <img src="src/assets/images/whatsapp.png" alt="" className="cursor-pointer"/>
                         </span>
                     </div>    
                 </div>

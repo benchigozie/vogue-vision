@@ -1,22 +1,53 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+
 function Ready () {
     
+    const form = useRef();
+
+    
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_gsh1c67', 'template_vv12nh9', form.current, {
+            publicKey: 'HdQ_JHMxUD0R09dMO',
+          })
+          .then(
+            () => {
+              //console.log('SUCCESS!');
+            },
+            (error) => {
+              //console.log('FAILED...', error.text);
+            },
+          );
+
+          e.target.reset();
+      };
+
+
     return (
         <>
-        <section className="flex justify-center flex-col gap-16 md:flex-row md:gap-28 md:px-[5%] alg:px-0 alg:gap-56 lg:gap-80  font-inter">
-            <div className="flex flex-col gap-4 justify-center px-[5%]">
+        <section className="flex justify-center flex-col gap-16 md:flex-row md:gap-28 md:px-[5%] alg:px-0 alg:gap-56 lg:gap-80  font-inter bg-vbrown bg-opacity-20 py-36">
+            <div className="flex flex-col gap-4 justify-center px-[5%] ">
                 <h4 className="text-lg text-vblack font-medium md:self-start">Ready to Start your Project?</h4>
                 <div>
-                    <form className="text-vblack font-inter flex flex-col gap-4">
-                        <div className="flex">
+                    <form ref={form} onSubmit={sendEmail } name="filled-form" className="text-vblack font-inter flex flex-col gap-4">
+                        <div className="flex flex-col">
                             <label className="w-1/6 md:w-20" htmlFor="your-name">Name:</label>
-                            <input className="w-5/6 md:2-[259px] bg-vblack bg-opacity-15 rounded-md py-1 px-1 focus:outline-vblue caret-sky-400" type="text" name="your-name" id="your-name"/>
+                            <input  className="w-full md:2-[259px] bg-vblack bg-opacity-25 rounded-md py-1 px-1 focus:outline-vblue caret-sky-400" type="text" name="user_name" id="your-name"/>
                         </div>
-                        <div className="flex">
+                        <div className="flex flex-col">
                             <label className="w-1/6 md:w-20" htmlFor="your-email">Email:</label>
-                            <input className="w-5/6 md:2-[259px] bg-vblack bg-opacity-15 rounded-md px-1 py-1 focus:outline-vblue caret-sky-400" type="email" name="your-email" id="your-email"/>
+                            <input className="w-full md:2-[259px] bg-vblack bg-opacity-25 rounded-md px-1 py-1 focus:outline-vblue caret-sky-400" type="email" name="user_email" id="your-email"/>
+                        </div>
+                        <div className="flex flex-col">
+                            <label className="w-1/6 md:w-20" htmlFor="your-message">Message:</label>
+                            <textarea name="message" id="your-message" className="w-full md:2-[259px] focus:outline-vblue bg-vblack bg-opacity-25 rounded-md h-32 p-2"></textarea>
                         </div>
                         
-                        <button className=" text-vwhite w-full md:w-[339px] h-9 hidden tn:block hover:transform hover:scale-105 ease-in duration-100 bg-gradient-to-r from-vblue to-sky-400">Get a Quote</button>
+                        <button className=" text-vwhite w-full md:w-[339px] h-9 hidden tn:block hover:transform hover:scale-105 ease-in duration-100 bg-gradient-to-r from-vblue to-sky-400" type="submit" value="Send">Get a Quote</button>
                     </form>
                 </div>
             </div>
